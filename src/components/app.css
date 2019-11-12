@@ -1,0 +1,380 @@
+/*Header*/
+body {
+  margin: 0;
+  background: #e7efec;
+  font-family: Open Sans,sans-serif;
+}
+.header {
+  overflow: hidden;
+  background: #1eb7ee;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  min-width:375px;
+}
+.header span {
+  float: right;
+  display: block;
+  color: white;
+  padding: 35px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+img{
+   max-height: 68px;
+   padding-left: 100px;
+   padding-top: 12px; 
+   float:left;
+}
+.searchTitle{
+    font-weight:100;
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+}
+.content{
+    min-height: calc(100vh - 320px);
+}
+
+/*TableSearch*/
+.tableSearch{
+   width: 600px;
+   margin-left: auto;
+   margin-right: auto;  
+}
+.searchInput{
+   height: 50px;
+   width: 500px;
+   border: none;
+   font-size: 20px;
+}
+.buttonSearch{
+    color: white;
+    font-size: 20px;
+    height: 50px;
+    width: 100px;
+    border: none;
+    background: #1eb7ee;
+    cursor: pointer;
+    border-radius: 0px 45px 0px 0px;
+}
+.buttonSearch:hover{
+    border-radius: 0px 15px 0px 0px;
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+}
+/*Button*/
+.buttonShift{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.row{
+    background: white;
+    height: 30px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title{
+    width: 500px;
+    color:grey;
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 15px;
+}
+.buttonDays{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+}
+.buttonDaysOne{
+    font-size: 18px;
+    background: white;
+    border:none;
+    color: grey;
+    border-bottom: 3px solid grey;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.buttonDaysOne:focus{
+    color: #1eb7ee;
+    border-bottom: 3px solid #1eb7ee;
+}
+
+.active {
+    font-size: 25px;
+    color: #1eb7ee;
+    background: white;
+    height: 50px;
+    width: 500px;
+    border-radius: 25px 25px 0px 0px;
+    border:none;
+    cursor: pointer;
+}
+.noActive{
+    font-size: 25px;
+    color: white;
+    background: #1eb7ee;
+    height: 50px;
+    width: 500px;
+    border-radius: 25px 25px 0px 0px;
+    border:none;
+    cursor: pointer;
+}
+.noActive:hover{
+   background: #73d2f0;
+   transition: .3s ease-in-out;
+   -webkit-transition: .3s ease-in-out;
+   -moz-transition: .3s ease-in-out;
+   -o-transition: .3s ease-in-out;
+   -ms-transition: .3s ease-in-out;
+}
+
+/*Table*/
+table {
+   border: 0px;
+   border-collapse: separate;
+   border-spacing: 0px;
+   width: 100%;
+}
+.tableContainer{
+   background: white;
+   width: 1000px;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: left;
+   margin-bottom: 30px;
+}
+
+table td,table th {
+   padding: 18px;
+   margin: 0;
+   font-size: 20px;
+}
+th {
+   color: grey;
+}
+
+.tableContainer tr:nth-child(even) {
+   background-color: #e7efec;
+   padding-right: 0;
+}
+/*Footer*/
+.footer {
+   height: 320px;
+   background: #696969; 
+}
+.footer-inner{
+   width: 800px;
+   margin-left: auto;
+   margin-right: auto;
+}
+.ul-one, .ul-two, .ul-three{
+   color: white;
+   list-style-type: none;
+   padding: 30px;
+   float:left;
+}
+.ul-one-title{
+   color: white;
+   list-style-type: none;
+}
+.li-title-one{
+    font-size: 20px;
+}
+li {
+    padding: 10px;
+}
+
+
+/*RESPONSIVE*/
+@media screen and (max-width: 1024px) {
+.header span {
+    display: none;
+}
+.header {
+    height: 52px;
+    box-shadow: none;
+}
+img {
+    max-height: 40px;
+    padding-left: 10px;
+    padding-top: 0px; 
+}
+.searchTitle{
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+.tableSearch{
+     width: 500px;
+     margin-left: 200px;
+}
+.searchInput{
+     height: 50px;
+     width: 300px;
+}
+.buttonSearch{
+    height: 50px;
+    width: 100px;
+}
+    
+.buttonShift{
+    width: 800px;
+    margin-left: 30px;
+    margin-right: auto; 
+}
+.active {
+    color: black;
+    height: 50px;
+    width: 400px;
+}
+.noActive{
+   height: 50px;
+   width: 400px;
+  
+}
+.tableContainer{
+    background: white;
+    width: 800px;
+    margin-left: 30px;
+    text-align: left;
+}
+table td{
+    padding: 17px;
+    margin: 10px;
+    font-size: 20px; 
+}
+.table{
+    width: 100%;
+}
+tr {
+    background-color: white;
+    margin-left: 20px;
+    font-size: 30px;
+}
+.buttonDaysOne{
+    background: white;
+    border:none;
+    color: grey;
+    border-bottom: 2px solid grey;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 10px;
+}
+.buttonDays{
+    width: 800px;
+    margin-left: 30px;
+}
+.row{
+    width: 800px;
+    margin-left: 30px; 
+}  
+}
+    
+/*RESPONSIVE SMALL TABLET AND PHONE*/    
+@media screen and (max-width: 768px) {
+.header {
+    height: 22px;
+    min-width: 700px;
+    box-shadow: none;
+}
+img {
+    max-height: 20px;
+    padding-left: 0px;
+    padding-top: 0px; 
+}
+.searchTitle{
+    font-size: 20px;
+    margin-left: 10%;
+    margin-right: 0;
+    width: 200px;
+}
+.tableSearch{
+    width: 300px;
+    margin-left: 10%;
+    margin-right: 0;  
+}
+.searchInput{
+     height: 30px;
+     width: 200px;
+}
+.buttonSearch{
+    height: 30px;
+    width: 100px;
+}
+.buttonShift{
+    width: 400px;
+    margin-left: 10%;
+    margin-right: 0; 
+}
+.active {
+    color: black;
+    height: 30px;
+    width: 150px;
+}
+.noActive{
+    height: 30px;
+    width: 150px;
+}
+.tableContainer{
+    background: white;
+    width: 200px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+}
+table td{
+    padding: 17px;
+    margin: 10px;
+    font-size: 20px;
+    display: inline-block; 
+}
+th{
+    display: none;
+}
+.table{
+    width: 200%;
+}
+tr {
+    background-color: white;
+    margin-left: 20px;
+    font-size: 30px;
+}
+.buttonDaysOne{
+    background: white;
+    border:none;
+    color: grey;
+    border-bottom: 2px solid grey;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 15px;
+    padding-top: 20px;
+}
+.buttonDays{
+    width: 500px;
+    margin-left: 0;
+}
+.row {
+    display: none;
+}
+.content{
+    min-height: calc(100vh - 900px);
+}
+.footer {
+    height: 900px;
+    min-width: 700px;
+}
+.ul-one, .ul-two, .ul-three{
+    float:none;
+}
+}
+
+
+
