@@ -1,3 +1,4 @@
+/* Стилі треба розбивати по окремим компонентам, і до кожного підрубати свої */
 /*Header*/
 body {
   margin: 0;
@@ -22,7 +23,7 @@ body {
 img{
    max-height: 68px;
    padding-left: 100px;
-   padding-top: 12px; 
+   padding-top: 12px;
    float:left;
 }
 .searchTitle{
@@ -40,7 +41,7 @@ img{
 .tableSearch{
    width: 600px;
    margin-left: auto;
-   margin-right: auto;  
+   margin-right: auto;
 }
 .searchInput{
    height: 50px;
@@ -70,7 +71,7 @@ img{
 .buttonShift{
     width: 1000px;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 }
 .row{
     background: white;
@@ -167,7 +168,7 @@ th {
 /*Footer*/
 .footer {
    height: 320px;
-   background: #696969; 
+   background: #696969;
 }
 .footer-inner{
    width: 800px;
@@ -204,7 +205,7 @@ li {
 img {
     max-height: 40px;
     padding-left: 10px;
-    padding-top: 0px; 
+    padding-top: 0px;
 }
 .searchTitle{
     font-size: 30px;
@@ -224,11 +225,11 @@ img {
     height: 50px;
     width: 100px;
 }
-    
+
 .buttonShift{
     width: 800px;
     margin-left: 30px;
-    margin-right: auto; 
+    margin-right: auto;
 }
 .active {
     color: black;
@@ -238,7 +239,7 @@ img {
 .noActive{
    height: 50px;
    width: 400px;
-  
+
 }
 .tableContainer{
     background: white;
@@ -249,7 +250,7 @@ img {
 table td{
     padding: 17px;
     margin: 10px;
-    font-size: 20px; 
+    font-size: 20px;
 }
 .table{
     width: 100%;
@@ -274,11 +275,11 @@ tr {
 }
 .row{
     width: 800px;
-    margin-left: 30px; 
-}  
+    margin-left: 30px;
 }
-    
-/*RESPONSIVE SMALL TABLET AND PHONE*/    
+}
+
+/*RESPONSIVE SMALL TABLET AND PHONE*/
 @media screen and (max-width: 768px) {
 .header {
     height: 22px;
@@ -288,7 +289,7 @@ tr {
 img {
     max-height: 20px;
     padding-left: 0px;
-    padding-top: 0px; 
+    padding-top: 0px;
 }
 .searchTitle{
     font-size: 20px;
@@ -299,7 +300,7 @@ img {
 .tableSearch{
     width: 300px;
     margin-left: 10%;
-    margin-right: 0;  
+    margin-right: 0;
 }
 .searchInput{
      height: 30px;
@@ -312,7 +313,7 @@ img {
 .buttonShift{
     width: 400px;
     margin-left: 10%;
-    margin-right: 0; 
+    margin-right: 0;
 }
 .active {
     color: black;
@@ -334,7 +335,7 @@ table td{
     padding: 17px;
     margin: 10px;
     font-size: 20px;
-    display: inline-block; 
+    display: inline-block;
 }
 th{
     display: none;

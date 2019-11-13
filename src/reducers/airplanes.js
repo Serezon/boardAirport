@@ -1,6 +1,6 @@
 import { searchFilter } from "../containers/app";
 
-export function reducer(state = {}, action) {
+export function reducer(state = {}, action) { // Треба описувати дефолтний стейт тут, а не в RootReducer'i
   switch (action.type) {
     case "SET_SHIFT":
       return Object.assign({}, state, {
@@ -11,6 +11,7 @@ export function reducer(state = {}, action) {
         search: action.search.toLowerCase()
       });
     case "RUN_FILTER":
+      // Треба юзати тільки let/const. Якщо однакові імена - просто перепиши друге та й все. Взагалі можна розбивати кейси по функціям. Приклад - redux-actions
       var newData = state.data[action.shift || state.shift].filter(x => {
         return (
           x["planeTypeID.code"].toLowerCase().includes(action.search || state.search)
